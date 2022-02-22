@@ -4,7 +4,9 @@ The Jupyter Notebook in this repository performs Bioinformatics variant analysis
 </p>
 
 Analysis Workflow:
-![image](https://media.github.boozallencsn.com/user/10697/files/3c5e0253-1e6a-4e66-9877-0737a9a4eb56)
+
+<img width="1005" alt="image" src="https://user-images.githubusercontent.com/99741809/155191883-44cc3be6-30bf-41da-ab16-d2034569ea02.png">
+
 
 The following third-party tools are used for facilitating variant analysis and required to be installed locally:
 * [ncov-ingest](https://github.com/nextstrain/ncov-ingest) (Optional): Nextstrain's `ncov-ingest` to get data from GISAID EpiCov Database. `ncov-ingest` requires a GISAID API endpoint for exporting data, which can be obtained through reaching out to GISAID support. 
