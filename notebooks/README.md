@@ -21,7 +21,7 @@ The steps for analysis in the Notebook are:
 5. **Validation Against Clinical Variants**: Compare sewage variants in NCBI to clinical variants in NCBI
 
 ## Setup
-It is recommended to run these python utilities in a virtual environment for package organization and avoiding versioning conflicts. Please make sure to replace local paths for installations and files when running the Notebook code.
+It is recommended to run these python utilities in a virtual environment for package organization and avoiding versioning conflicts. Please make sure to replace local paths for installations and files when running the Notebook code. Please note that the notebook may take a while to load.
 1. **Install Python** (The Notebook Code was developed using Python3.8)
 2. **Install PIP3**
 3. **Install Jupyter and Setup Python Interpreter as Needed**
