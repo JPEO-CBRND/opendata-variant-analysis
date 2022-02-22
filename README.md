@@ -6,7 +6,9 @@ Please note that this repository is also similar to Bioinformatics analysis perf
 </p>
 
 Analysis Workflow:
+
 <img width="836" alt="image" src="https://user-images.githubusercontent.com/99741809/155190687-329c4977-e840-4eb3-bfde-a64abec7b506.png">
+
 
 Example Analysis Steps using GISAID EpiCov Samples:
 1. **FASTA Creation from GISAID data exports**: Run `ncov_to_fasta.py` to obtain individual FASTA sequence files from `ncov-ingest` data exports
