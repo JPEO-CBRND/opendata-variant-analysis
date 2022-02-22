@@ -6,7 +6,7 @@ Please note that this repository is also similar to Bioinformatics analysis perf
 </p>
 
 Analysis Workflow:
-![image](https://media.github.boozallencsn.com/user/10697/files/ff51cbc8-c9dc-425f-bb0b-fb3ae8fc73ef)
+<img width="836" alt="image" src="https://user-images.githubusercontent.com/99741809/155190687-329c4977-e840-4eb3-bfde-a64abec7b506.png">
 
 Example Analysis Steps using GISAID EpiCov Samples:
 1. **FASTA Creation from GISAID data exports**: Run `ncov_to_fasta.py` to obtain individual FASTA sequence files from `ncov-ingest` data exports
@@ -186,7 +186,7 @@ The following SnpSift command is run within the algorithm to filter SnpEff annot
 
 Current timing on the Bioinformatics workflow steps are listed below. This is based on running the scripts on a single, AWS EC2 c5.9xlarge instance.
 
-![image](https://media.github.boozallencsn.com/user/10697/files/af647a88-c60c-49e1-b379-6f6d9f3558a7)
+<img width="722" alt="image" src="https://user-images.githubusercontent.com/99741809/155190793-ab0e36bc-b76e-4669-80b7-ec1a0f874e8a.png">
 
 * **Pyspark**: Integrating PySpark may introduce scalability and distribution across a larger compute cluster for larger sample datasets.
 * **Additional Analysis Tools**: The variant analysis tools (Minimap2, Picard, Bcftools, SnpEff, and SnpSift) were based off of the analysis pipeline used by Rayko et al. in the references below. Additional tools for variant analysis can be included for more comprehensive verification of variant results. 
