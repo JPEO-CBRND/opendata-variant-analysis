@@ -64,7 +64,7 @@ Parse out individual fasta files from ncov-ingest's metadata.tsv and sequences.f
 - `ncovtofasta`: Parses out individual FASTA sequence files from input from ncov-ingest's metadata.tsv and sequences.fasta files. Will separate out FASTA sequences and metadata with known patient status if specified.
 
    Example:
-   > python3 scripts/ncov_to_fasta.py ncovtofasta --metadata /home/ubuntu/gisaid/bi-pipeline/gisaid-pull/ncov-ingest/data/gisaid/metadata.tsv --multifasta /home/ubuntu/gisaid/bi-pipeline/gisaid-pull/ncov-ingest/data/gisaid/sequences.fasta --patientstatus y --outputdir /home/ubuntu/gisaid/bi-pipeline/output/gisaid-nov-19-2021-pull/fasta
+   > python3 scripts/ncov_to_fasta.py ncovtofasta --metadata /home/tstusr/ncov-ingest/data/gisaid/metadata.tsv --multifasta /home/tstusr/ncov-ingest/data/gisaid/sequences.fasta --patientstatus y --outputdir /home/tstusr/gisaid-nov-19-2021-pull/fasta
 
    Expected output:
    ```
@@ -106,7 +106,7 @@ The following `bgzip` and `tabix` commands are used for file compression and ind
 - `variantcall`:
 
   Example:
-  >python3 /home/ubuntu/gisaid/bi-pipeline/scripts/variant_calling.py variantcall --ref /home/ubuntu/gisaid/bi-pipeline/reference/NC_045512.2.fa --fastadir /home/ubuntu/gisaid/bi-pipeline/output/gisaid-nov-19-2021-pull/fasta/all_hcov19_fasta --outdir /variant-data/gisaid-nov-19-2021-pull/all_hcov19_vcf --minimap2 /home/ubuntu/gisaid/tools/minimap2-2.22_x64-linux/minimap2 --k8 /home/ubuntu/gisaid/tools/minimap2-2.22_x64-linux/k8 --paftools /home/ubuntu/gisaid/tools/minimap2-2.22_x64-linux/paftools.js
+  >python3 /home/tstusr/open-variant-analysis/scripts/variant_calling.py variantcall --ref /home/tstusr/reference/NC_045512.2.fa --fastadir /home/tstusr/gisaid-nov-19-2021-pull/fasta/all_hcov19_fasta --outdir /home/tstusr/gisaid-nov-19-2021-pull/all_hcov19_vcf --minimap2 /home/tstusr/tools/minimap2-2.22_x64-linux/minimap2 --k8 /home/tstusr/tools/minimap2-2.22_x64-linux/k8 --paftools /home/tstusr/tools/minimap2-2.22_x64-linux/paftools.js
   
   Expected Output:
   ```
@@ -119,7 +119,7 @@ The following `bgzip` and `tabix` commands are used for file compression and ind
 - `picardmergevcf`:
    
    Example:
-   >python3 variant_calling.py picardmergevcf --picard /Users/roshnaagarwal/picard/build/libs/picard.jar --vcfdir /Users/roshnaagarwal/Documents/JPEO/GISAID-workflow/vcf_output --outdir /Users/roshnaagarwal/Documents/JPEO/GISAID-workflow/vcf_output
+   >python3 variant_calling.py picardmergevcf --picard /home/tstusr/picard/build/libs/picard.jar --vcfdir /home/tstusr/vcf_output --outdir /home/tstusr/vcf_output
 
    Expected Output
    ```
@@ -134,7 +134,7 @@ The following `bgzip` and `tabix` commands are used for file compression and ind
 - `bcfmergevcf`:
 
    Example:
-   > python3 /home/ubuntu/gisaid/bi-pipeline/scripts/variant_calling.py bcfmergevcf --bcf /home/ubuntu/gisaid/tools/bcftools-1.13/bcftools --bgzip /home/ubuntu/gisaid/tools/htslib-1.13/bgzip --tabix /home/ubuntu/gisaid/tools/htslib-1.13/tabix --vcfdir /home/ubuntu/gisaid/bi-pipeline/output/gisaid-oct-26-2021-pull/vcf/all_hcov_19_vcf --outdir /home/ubuntu/gisaid/bi-pipeline/output/gisaid-oct-26-2021-pull/vcf/all_hcov_19_vcf
+   > python3 /home/tstusr/open-variant-analysis/scripts/variant_calling.py bcfmergevcf --bcf /home/tstusr/tools/bcftools-1.13/bcftools --bgzip /home/tstusr/tools/htslib-1.13/bgzip --tabix /home/tstusr/tools/htslib-1.13/tabix --vcfdir /home/tstusr/gisaid-oct-26-2021-pull/vcf/all_hcov_19_vcf --outdir /home/tstusr/gisaid-oct-26-2021-pull/vcf/all_hcov_19_vcf
 
    Expected Output:
    ```
@@ -164,7 +164,7 @@ The following SnpSift command is run within the algorithm to filter SnpEff annot
  - `snpeff`:
  
     Example:
-    >python3 /home/ubuntu/gisaid/bi-pipeline/scripts/variant_annotation.py snpeff --jar /home/ubuntu/gisaid/tools/snpEff/snpEff.jar --vcf /home/ubuntu/gisaid/bi-pipeline/output/gisaid-nov-19-2021-pull/vcf/ps_hcov19_vcf/bcftools_output_merged_vcfs/final_multivcf.vcf.gz --outdir /home/ubuntu/gisaid/bi-pipeline/output/gisaid-nov-19-2021-pull
+    >python3 /home/tstusr/opendata-variant-analysis/scripts/variant_annotation.py snpeff --jar /home/tstusr/tools/snpEff/snpEff.jar --vcf /home/tstusr/gisaid-nov-19-2021-pull/vcf/ps_hcov19_vcf/bcftools_output_merged_vcfs/final_multivcf.vcf.gz --outdir /home/tstusr/gisaid-nov-19-2021-pull
     
     Expected Output:
     ```
@@ -179,7 +179,7 @@ The following SnpSift command is run within the algorithm to filter SnpEff annot
  - `snpsift`:
  
     Example:
-    >python3 /home/ubuntu/gisaid/bi-pipeline/scripts/variant_annotation.py snpsift --jar /home/ubuntu/gisaid/tools/snpEff/SnpSift.jar  --vcf /home/ubuntu/gisaid/bi-pipeline/output/gisaid-nov-19-2021-pull/snpeff-annotation-11242021220504.vcf --effscript /home/ubuntu/gisaid/tools/snpEff/scripts/vcfEffOnePerLine.pl --outdir /home/ubuntu/gisaid/bi-pipeline/output/gisaid-nov-19-2021-pull
+    >python3 /home/tstusr/opendata-variant-analysis/scripts/variant_annotation.py snpsift --jar /home/tstusr/tools/snpEff/SnpSift.jar  --vcf /home/tstusr/gisaid-nov-19-2021-pull/snpeff-annotation-11242021220504.vcf --effscript /home/tstusr/tools/snpEff/scripts/vcfEffOnePerLine.pl --outdir /home/tstusr/gisaid-nov-19-2021-pull
     
     Expected Output:
     ```
