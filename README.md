@@ -49,7 +49,7 @@ The following third-party tools are used for facilitating variant analysis and r
 
    The following output files will be generated and `sequences.fasta` and `metadata.tsv` can be used as input for `ncov_to_fasta.py` for FASTA creation:
    ```
-    ubuntu@ip-10-194-21-241:~/gisaid/bi-pipeline/gisaid-pull/ncov-ingest/data/gisaid$ ls -lhtr
+    ubuntu@server:~/ncov-ingest/data/gisaid$ ls -lhtr
     total 128G
     -rw-rw-r-- 1 ubuntu ubuntu 1.3G Oct 26 21:17 metadata.tsv
     -rw-rw-r-- 1 ubuntu ubuntu 195M Oct 26 21:17 additional_info.tsv
