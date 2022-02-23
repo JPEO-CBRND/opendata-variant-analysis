@@ -198,3 +198,4 @@ Current timing on the Bioinformatics workflow steps are listed below. This is ba
 
 ## References
 1. Rayko, Mikhail, and Aleksey Komissarov. "Quality Control Of Low-Frequency Variants In SARS-Cov-2 Genomes". 2020. Cold Spring Harbor Laboratory, doi:10.1101/2020.04.26.062422. Accessed 29 Nov 2021.
+2. Li, H. (2018). Minimap2: pairwise alignment for nucleotide sequences. Bioinformatics, 34:3094-3100. doi:10.1093/bioinformatics/bty191
