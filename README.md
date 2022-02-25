@@ -8,7 +8,7 @@ Variant Prioritization Pipeline Summary</h2>
 **Results:** We present a Variant Prioritization Pipeline to help track and potentially flag emerging SARS-CoV-2 viral genomic variants. The pipeline is composed of two workflows and currently focuses on wastewater surveillance. The first workflow queries NCBI Genbank, the major domestic source for virus nucleotide sequences, for SARS-CoV-2 sequences collected from wastewater or environmental sources. The workflow uses Minimap2, Bcftools, and SnpEff/SnpSift to call, merge, and annotate genomic variants.    The second workflow accepts search terms from a user to automatically retrieve and annotate relevant publications. The workflow uses NCBI tools, Pubtator, and custom Python scripting to display search terms mapped to SARS-CoV-2 viral variants. 
 
  ![image](https://user-images.githubusercontent.com/99741809/155772174-4a8f4c7c-1a54-4f56-9a6f-cbc17f1d2716.png)
- <img width="470" alt="image" src="https://user-images.githubusercontent.com/99741809/155772264-2f74b138-3f9a-4862-b9a0-17cde73e0a4d.png">
+ ![image](https://user-images.githubusercontent.com/99741809/155772264-2f74b138-3f9a-4862-b9a0-17cde73e0a4d.png)
 
  
 **References**
