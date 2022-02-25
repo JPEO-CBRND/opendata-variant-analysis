@@ -1,5 +1,5 @@
-Air Force COVID-19 Wastewater Surveillance:
-Variant Prioritization Pipeline Summary
+<h2>Air Force COVID-19 Wastewater Surveillance:
+Variant Prioritization Pipeline Summary</h2>
 
 **BLUF:** A Variant Prioritization Pipeline was developed to help identify and track publicly deposited data and available literature from user-supplied topics of interest in order to correlate them with SARS-CoV-2 viral genomic variants. The pipeline will help users collate open-source literature and data on the evolving COVID-19 pandemic in a faster, easier, and automated fashion for various downstream purposes (e.g., SARS-CoV-2 assay design and development).  
 
@@ -11,5 +11,6 @@ Variant Prioritization Pipeline Summary
  <img width="470" alt="image" src="https://user-images.githubusercontent.com/99741809/155771598-d1efe1d9-405b-41e5-9ba2-e7dfa5c50f4d.png">
 
  
-References
+**References:**
+
 Tao, K., Tzou, P.L., Nouhin, J. et al. The biological and clinical significance of emerging SARS-CoV-2 variants. Nat Rev Genet 22, 757–773 (2021). https://doi.org/10.1038/s41576-021-00408-x
