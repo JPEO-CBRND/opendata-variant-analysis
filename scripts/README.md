@@ -3,7 +3,7 @@
 Assortment of standalone python utilities that run on the command line for variant analysis. Functionality includes: parsing GISAID data exports and FASTA file creation, genome alignment, variant calling, VCF (Variant Call Format) file merging, conversion to parquet, and variant annotation. These utilities were specifically used for GISAID EpiCoV samples, however some of these utilities can be applied to other variant analysis initiatives.
 </p>
 
-* `requirements.txt` Lists Python utilities and versions that can be installed in a virtual environment
+* `requirements.txt` Lists Python utilities and versions that can be installed in a Python virtual environment. Example `python -m pip install -r requirements.txt`
 
 Analysis Workflow:
 
